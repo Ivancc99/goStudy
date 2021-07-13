@@ -41,4 +41,17 @@ func main() {
 	b2 := b1
 	b1[0] = 99
 	fmt.Println(b2, b1)
+
+	var testArray [3]int
+	var numArray = []int{1, 2}
+	var cityArray = []string{"北京", "上海", "深圳"}
+	fmt.Println(testArray)                          //[0 0 0]
+	fmt.Println(numArray)                           //[1 2]
+	fmt.Printf("type of numArray:%T\n", numArray)   //type of numArray:[2]int
+	fmt.Println(cityArray)                          //[北京 上海 深圳]
+	fmt.Printf("type of cityArray:%T\n", cityArray) //type of cityArray:[3]string
+
+	for _, city := range cities {
+		fmt.Printf("%p\n", &city)
+	}
 }
